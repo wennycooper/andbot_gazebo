@@ -14,10 +14,10 @@ global_costmap:
   inflation_radius: 1.5 
   cost_scaling_factor: 2.0
   allow_unknown: true
-  plugins:
-    - {name: static_layer, type: "costmap_2d::StaticLayer"}
+#  plugins:
+#    - {name: static_layer, type: "costmap_2d::StaticLayer"}
     #- {name: sonar_layer,   type: "range_sensor_layer::RangeSensorLayer"}
-    - {name: obstacle_layer, type: "costmap_2d::VoxelLayer"}
+#    - {name: obstacle_layer, type: "costmap_2d::VoxelLayer"}
     #- {name: sonar_layer,   type: "range_sensor_layer::RangeSensorLayer"}
-    - {name: inflation_layer, type: "costmap_2d::InflationLayer"}
+#    - {name: inflation_layer, type: "costmap_2d::InflationLayer"}
     #- {name: sonar_layer,   type: "range_sensor_layer::RangeSensorLayer"}

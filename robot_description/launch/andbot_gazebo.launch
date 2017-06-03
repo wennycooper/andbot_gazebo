@@ -58,8 +58,12 @@
   </node>
 
   <!-- start gazebo_remap, mybot_base_controller & mybot_odometry -->
-  <node name="gazebo_remap" pkg="andbot_robot" type="gazebo_remap" respawn="false" output="screen"/>
-  <node pkg="andbot_robot" type="mybot_odometry" name="mybot_odometry" />
-  <node pkg="andbot_robot" type="mybot_base_controller" name="mybot_base_controller" />
+  <node name="gazebo_remap" pkg="andbot_gazebo" type="gazebo_remap" respawn="false" output="screen"/>
+  <node pkg="andbot_gazebo" type="mybot_odometry" name="mybot_odometry" />
+  <node pkg="andbot_gazebo" type="mybot_base_controller" name="mybot_base_controller" />
+
+  <!-- start position_listener -->
+  <node pkg="position_listener" type="position_listener" name="position_listener"/>
+
 
 </launch>

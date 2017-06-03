@@ -13,8 +13,8 @@ local_costmap:
   #ORIG  cost_scaling_factor: 2.0
   inflation_radius: 1.5
   cost_scaling_factor: 2.0
-  plugins: 
-    - {name: sonar_layer,   type: "range_sensor_layer::RangeSensorLayer"}
-    - {name: obstacle_layer, type: "costmap_2d::VoxelLayer"}
+#  plugins: 
+#    - {name: sonar_layer,   type: "range_sensor_layer::RangeSensorLayer"}
+#    - {name: obstacle_layer, type: "costmap_2d::VoxelLayer"}
     #- {name: sonar_layer,   type: "range_sensor_layer::RangeSensorLayer"}
-    - {name: inflation_layer, type: "costmap_2d::InflationLayer"}
+#    - {name: inflation_layer, type: "costmap_2d::InflationLayer"}
