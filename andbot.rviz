@@ -3,13 +3,7 @@ Panels:
     Help Height: 78
     Name: Displays
     Property Tree Widget:
-      Expanded:
-        - /Global Options1
-        - /Status1
-        - /Global Costmap1
-        - /Local Costmap1
-        - /TF1
-        - /LaserScan2
+      Expanded: ~
       Splitter Ratio: 0.5
     Tree Height: 435
   - Class: rviz/Selection
@@ -75,7 +69,6 @@ Visualization Manager:
           Alpha: 1
           Show Axes: true
           Show Trail: false
-          Value: true
         caster_wheel:
           Alpha: 1
           Show Axes: false
@@ -85,38 +78,68 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
+        laser:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
           Value: true
         left_arm_link1:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
         left_arm_link2:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
         left_wheel:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
         right_arm_link1:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
         right_arm_link2:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
         right_wheel:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
-        xv11:
+        rplidar:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        sonar_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        sonar_2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        sonar_3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        sonar_4:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        sonar_5:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        sonar_6:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        sonar_7:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        sonar_8:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -126,35 +149,6 @@ Visualization Manager:
       Update Interval: 0
       Value: true
       Visual Enabled: true
-    - Alpha: 1
-      Autocompute Intensity Bounds: true
-      Autocompute Value Bounds:
-        Max Value: 10
-        Min Value: -10
-        Value: true
-      Axis: Z
-      Channel Name: x
-      Class: rviz/LaserScan
-      Color: 255; 0; 0
-      Color Transformer: FlatColor
-      Decay Time: 0
-      Enabled: false
-      Invert Rainbow: true
-      Max Color: 255; 0; 0
-      Max Intensity: 7.85366
-      Min Color: 255; 0; 0
-      Min Intensity: -2.11148
-      Name: LaserScan
-      Position Transformer: XYZ
-      Queue Size: 10
-      Selectable: true
-      Size (Pixels): 3
-      Size (m): 0.1
-      Style: Flat Squares
-      Topic: /laser
-      Use Fixed Frame: true
-      Use rainbow: true
-      Value: false
     - Alpha: 0.7
       Class: rviz/Map
       Color Scheme: map
@@ -250,6 +244,8 @@ Visualization Manager:
           Value: true
         head_link:
           Value: true
+        laser:
+          Value: true
         left_arm_link1:
           Value: true
         left_arm_link2:
@@ -266,7 +262,23 @@ Visualization Manager:
           Value: true
         right_wheel:
           Value: true
-        xv11:
+        rplidar:
+          Value: true
+        sonar_1:
+          Value: true
+        sonar_2:
+          Value: true
+        sonar_3:
+          Value: true
+        sonar_4:
+          Value: true
+        sonar_5:
+          Value: true
+        sonar_6:
+          Value: true
+        sonar_7:
+          Value: true
+        sonar_8:
           Value: true
       Marker Scale: 1
       Name: TF
@@ -283,7 +295,8 @@ Visualization Manager:
                 caster_wheel:
                   {}
                 head_link:
-                  {}
+                  laser:
+                    {}
                 left_arm_link1:
                   left_arm_link2:
                     {}
@@ -294,7 +307,23 @@ Visualization Manager:
                     {}
                 right_wheel:
                   {}
-              xv11:
+                sonar_1:
+                  {}
+                sonar_2:
+                  {}
+                sonar_3:
+                  {}
+                sonar_4:
+                  {}
+                sonar_5:
+                  {}
+                sonar_6:
+                  {}
+                sonar_7:
+                  {}
+                sonar_8:
+                  {}
+              rplidar:
                 {}
       Update Interval: 0
       Value: true
@@ -323,7 +352,7 @@ Visualization Manager:
       Size (Pixels): 3
       Size (m): 0.1
       Style: Flat Squares
-      Topic: /xv11_scan
+      Topic: /scan
       Use Fixed Frame: true
       Use rainbow: true
       Value: true
@@ -351,22 +380,22 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 22.7835
+      Distance: 10.5808
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.06
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -0.609215
-        Y: 0.214511
-        Z: 1.98818
+        X: 8.95658
+        Y: 3.47753
+        Z: 1.99573
       Name: Current View
       Near Clip Distance: 0.01
       Pitch: 1.5698
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 3.08358
+      Yaw: 4.19858
     Saved: ~
 Window Geometry:
   Displays:
@@ -384,5 +413,5 @@ Window Geometry:
   Views:
     collapsed: true
   Width: 940
-  X: 424
-  Y: 70
+  X: 414
+  Y: 14
