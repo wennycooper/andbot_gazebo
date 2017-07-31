@@ -592,13 +592,16 @@
 
 <!--Sonar Link -->
   <!-- Base link / sonar1 link joint -->
+<!--
   <joint name="sonar_1_fixed" type="fixed">
     <parent link="base_link"/>
     <child link="sonar_1"/>
     <origin xyz="-0.10374 0.23695 ${0.03475+0.029}"  rpy="0 0 1.5707"/>
   </joint>
+-->
 
 <!--Sonar Link1-->
+<!--
   <link name="sonar_1">
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -628,16 +631,20 @@
     <kd value="1.0"/>
     <material>Gazebo/Yellow</material>
   </gazebo>
+-->
 
 <!--Sonar Link 2-->
   <!-- Base link / sonar2 link joint -->
+<!--
   <joint name="sonar_2_fixed" type="fixed">
     <parent link="base_link"/>
     <child link="sonar_2"/>
     <origin xyz="-0.15374 0.23214 ${0.03475+0.029}"  rpy="0 0 1.5707"/>
   </joint>
+-->
 
 <!--Sonar Link2-->
+<!--
   <link name="sonar_2">
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -667,15 +674,19 @@
     <kd value="1.0"/>
     <material>Gazebo/Yellow</material>
   </gazebo>
+-->
 
   <!-- Base link / sonar3 link joint -->
+<!--
   <joint name="sonar_3_fixed" type="fixed">
     <parent link="base_link"/>
     <child link="sonar_3"/>
     <origin xyz="-0.20374 0.20726 ${0.03475+0.029}"  rpy="0 0 1.5707"/>
   </joint>
+-->
 
 <!--Sonar Link3-->
+<!--
   <link name="sonar_3">
 
     <collision>
@@ -706,15 +717,19 @@
     <kd value="1.0"/>
     <material>Gazebo/Yellow</material>
   </gazebo>
+-->
 
   <!-- Base link / sonar4 link joint -->
+<!--
   <joint name="sonar_4_fixed" type="fixed">
     <parent link="base_link"/>
     <child link="sonar_4"/>
     <origin xyz="-0.25374 0.18238 ${0.03475+0.029}"  rpy="0 0 1.5707"/>
   </joint>
+-->
 
 <!--Sonar Link4-->
+<!--
   <link name="sonar_4">
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -744,15 +759,19 @@
     <kd value="1.0"/>
     <material>Gazebo/Yellow</material>
   </gazebo>
+-->
 
   <!-- Base link / sonar5 link joint -->
+<!--
   <joint name="sonar_5_fixed" type="fixed">
     <parent link="base_link"/>
     <child link="sonar_5"/>
     <origin xyz="-0.25374 -0.18238 ${0.03475+0.029}"  rpy="0 0 -1.5707"/>
   </joint>
+-->
 
 <!--Sonar Link5-->
+<!--
   <link name="sonar_5">
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -782,16 +801,19 @@
     <kd value="1.0"/>
     <material>Gazebo/Yellow</material>
   </gazebo>
-
+-->
 
   <!-- Base link / sonar6 link joint -->
+<!--
   <joint name="sonar_6_fixed" type="fixed">
     <parent link="base_link"/>
     <child link="sonar_6"/>
     <origin xyz="-0.20374 -0.21205 ${0.03475+0.029}"  rpy="0 0 -1.5707"/>
   </joint>
+-->
 
 <!--Sonar Link6-->
+<!--
   <link name="sonar_6">
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -821,16 +843,20 @@
     <kd value="1.0"/>
     <material>Gazebo/Yellow</material>
   </gazebo>
+-->
 
 
   <!-- Base link / sonar7 link joint -->
+<!--
   <joint name="sonar_7_fixed" type="fixed">
     <parent link="base_link"/>
     <child link="sonar_7"/>
     <origin xyz="-0.15374 -0.23214 ${0.03475+0.029}"  rpy="0 0 -1.5707"/>
   </joint>
+-->
 
 <!--Sonar Link7-->
+<!--
   <link name="sonar_7">
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -860,16 +886,19 @@
     <kd value="1.0"/>
     <material>Gazebo/Yellow</material>
   </gazebo>
+-->
 
   <!-- Base link / sonar8 link joint -->
+<!--
   <joint name="sonar_8_fixed" type="fixed">
     <parent link="base_link"/>
     <child link="sonar_8"/>
     <origin xyz="-0.10374 -0.23695 ${0.03475+0.029}"  rpy="0 0 -1.5707"/>
   </joint>
-
+-->
 
 <!--Sonar Link8-->
+<!--
   <link name="sonar_8">
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -899,6 +928,7 @@
     <kd value="1.0"/>
     <material>Gazebo/Yellow</material>
   </gazebo>
+-->
 
   <!-- Gazebo ROS control plugin -->
   <gazebo>
@@ -973,6 +1003,7 @@
 
  <!-- Proximity sensor plugin TO DO-->
 
+<!--
   <gazebo reference="sonar_1">
     <sensor name ="sonar1" type="ray">
        <pose>0 0 0 0 0 0</pose>
@@ -1000,7 +1031,7 @@
         </range>
       </ray>
       <plugin filename="libgazebo_ros_range.so" name="gazebo_ros_range">
-        <!--<robotNamespace>andbot</robotNamespace>-->
+        <robotNamespace>andbot</robotNamespace>
         <gaussianNoise>0.05</gaussianNoise>
         <alwaysOn>true</alwaysOn>
         <updateRate>20</updateRate>
@@ -1040,7 +1071,7 @@
         </range>
       </ray>
       <plugin filename="libgazebo_ros_range.so" name="gazebo_ros_range">
-        <!--<robotNamespace>andbot</robotNamespace>-->
+        <robotNamespace>andbot</robotNamespace>
         <gaussianNoise>0.05</gaussianNoise>
         <alwaysOn>true</alwaysOn>
         <updateRate>20</updateRate>
@@ -1080,7 +1111,7 @@
         </range>
       </ray>
       <plugin filename="libgazebo_ros_range.so" name="gazebo_ros_range">
-        <!--<robotNamespace>andbot</robotNamespace>-->
+        <robotNamespace>andbot</robotNamespace>
         <gaussianNoise>0.05</gaussianNoise>
         <alwaysOn>true</alwaysOn>
         <updateRate>20</updateRate>
@@ -1120,7 +1151,7 @@
         </range>
       </ray>
       <plugin filename="libgazebo_ros_range.so" name="gazebo_ros_range">
-        <!--<robotNamespace>andbot</robotNamespace>-->
+        <robotNamespace>andbot</robotNamespace>
         <gaussianNoise>0.05</gaussianNoise>
         <alwaysOn>true</alwaysOn>
         <updateRate>20</updateRate>
@@ -1160,7 +1191,7 @@
         </range>
       </ray>
       <plugin filename="libgazebo_ros_range.so" name="gazebo_ros_range">
-        <!--<robotNamespace>andbot</robotNamespace>-->
+        <robotNamespace>andbot</robotNamespace>
         <gaussianNoise>0.05</gaussianNoise>
         <alwaysOn>true</alwaysOn>
         <updateRate>20</updateRate>
@@ -1200,7 +1231,7 @@
         </range>
       </ray>
       <plugin filename="libgazebo_ros_range.so" name="gazebo_ros_range">
-        <!--<robotNamespace>andbot</robotNamespace>-->
+        <robotNamespace>andbot</robotNamespace>
         <gaussianNoise>0.05</gaussianNoise>
         <alwaysOn>true</alwaysOn>
         <updateRate>20</updateRate>
@@ -1240,7 +1271,7 @@
         </range>
       </ray>
       <plugin filename="libgazebo_ros_range.so" name="gazebo_ros_range">
-        <!--<robotNamespace>andbot</robotNamespace>-->
+        <robotNamespace>andbot</robotNamespace>
         <gaussianNoise>0.05</gaussianNoise>
         <alwaysOn>true</alwaysOn>
         <updateRate>20</updateRate>
@@ -1280,7 +1311,7 @@
         </range>
       </ray>
       <plugin filename="libgazebo_ros_range.so" name="gazebo_ros_range">
-       <!-- <robotNamespace>andbot</robotNamespace>-->
+        <robotNamespace>andbot</robotNamespace>
         <gaussianNoise>0.05</gaussianNoise>
         <alwaysOn>true</alwaysOn>
         <updateRate>20</updateRate>
@@ -1293,5 +1324,6 @@
       </plugin>
     </sensor>
   </gazebo>
+-->
 
 </robot>
