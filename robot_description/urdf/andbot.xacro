@@ -972,7 +972,7 @@
           <horizontal>
             <samples>180</samples>
             <resolution>1</resolution>
-            <min_angle>-1.57</min_angle>
+            <min_angle>-1.57</min_angle> 
             <!-- -0.0174532925 -->
             <max_angle>1.57</max_angle>
             <!-- 0.0174532925 -->
