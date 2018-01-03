@@ -63,7 +63,8 @@
   <node pkg="andbot_gazebo" type="mybot_base_controller" name="mybot_base_controller" />
 
   <!-- start position_listener -->
+<!--
   <node pkg="position_listener" type="position_listener" name="position_listener"/>
-
+-->
 
 </launch>
