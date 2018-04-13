@@ -14,11 +14,11 @@ andbot:
   leftWheel_velocity_controller:
     type: velocity_controllers/JointVelocityController
     joint: left_wheel_hinge
-    pid: {p: 10.0, i: 2, d: 0.0}
+    pid: {p: 100.0, i: 2, d: 0.0}
   rightWheel_velocity_controller:
     type: velocity_controllers/JointVelocityController
     joint: right_wheel_hinge
-    pid: {p: 10.0, i: 2, d: 0.0}
+    pid: {p: 100.0, i: 2, d: 0.0}
 
 
 

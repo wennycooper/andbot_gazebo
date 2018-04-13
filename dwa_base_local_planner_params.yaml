@@ -1,0 +1,32 @@
+DWAPlannerROS:
+  max_trans_vel: 0.8
+  min_trans_vel: 0.05 # 0.05 # 0.05
+  max_vel_x: 0.6
+  min_vel_x: -0.6
+  max_vel_y: 0.0  # zero for a differential drive robot
+  min_vel_y: 0.0
+  max_rot_vel: 0.6 # 1.0
+  min_rot_vel: 0.02 # 0.2
+  acc_lim_x: 1.0
+  acc_lim_y: 0.0  # zero for a differential drive robot
+  acc_lim_theta: 2.0
+
+  xy_goal_tolerance: 0.10
+  yaw_goal_tolerance: 0.10
+  latch_xy_goal_tolerance: true
+
+  oscillation_reset_dist: 0.05
+  oscillation_reset_angle: 0.2
+
+  path_distance_bias:  32.0 # 32.0 # 60
+  goal_distance_bias:  24.0 # 24.0
+  occdist_scale:      0.01 # 1.0 # 0.5 # 0.01
+  forward_point_distance: 0.325
+  sim_time: 2.0 # 3.0 # 2.0
+  sim_granularity: 0.05 # 0.025 # 0.1
+  angular_sim_granularity: 0.06 # 0.02
+  vx_samples: 5 # 3
+  vy_samples: 1  # zero for a differential drive robot
+  vtheta_samples: 10 # 40 # 20
+  dwa: false # true
+
